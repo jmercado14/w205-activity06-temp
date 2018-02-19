@@ -26,7 +26,7 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
-      - /home/science/w205-activity06-temp:/w205-activity06-temp
+      - /home/science/w205-activity06-temp:/w205
     expose:
       - "9092"
       - "29092"
@@ -38,6 +38,6 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - /home/science/w205-activity06-temp:/w205-activity06-temp
+      - /home/science/w205-activity06-temp:/w205
     extra_hosts:
       - "moby:127.0.0.1"
