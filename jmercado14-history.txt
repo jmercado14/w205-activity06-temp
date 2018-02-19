@@ -1,0 +1,172 @@
+    1  docker ps -a
+    2  docker pull midsw205/base
+    3  sudo ufw status
+    4  ls
+    5  docker run -it -rm -v ~/w205:/w205 midsw205/base bash
+    6  git clone https://github.com/mids-w205-fine/activity05-jmercado14
+    7  ls
+    8  bq help
+    9  bq --help
+   10  cd activity05-jmercado14/
+   11  ls
+   12  bq --help
+   13  gcloud auth login
+   14  ls
+   15  docker-compose ps
+   16  ls
+   17  cd ..
+   18  ls
+   19  git clone https://github.com/mids-w205-fine/course-content
+   20  ls
+   21  cd course-content/
+   22  ls
+   23  cd tutorials/
+   24  ls
+   25  cd ..
+   26  cd templates
+   27  ls
+   28  cd ..
+   29  ls
+   30  cd 03-Welcome-to-the-Queryside/
+   31  ls
+   32  cd ..
+   33  cd 04-Storing-Data/
+   34  ls
+   35  exit
+   36  ls
+   37  cd ..
+   38  ls
+   39  cd ..
+   40  ls
+   41  cd science
+   42  exit
+   43  ls
+   44  mkdir midsw205
+   45  cd midsw205/
+   46  ls
+   47  mkdir kafka
+   48  cd kafka/
+   49  ls
+   50  wget https://www.gutenberg.org/files/76/76-0.txt
+   51  cat 76-0.txt | sort | uniq | wc -[
+   52  cat 76-0.txt | sort | uniq | wc -l
+   53  cd ..
+   54  mkdir w205
+   55  cd w205/
+   56  mkdir kafka
+   57  ls
+   58  cd kafka
+   59  ls
+   60  cd ..
+   61  ls
+   62  cd course-content/
+   63  git pull origin master
+   64  cd ..
+   65  cd w205/
+   66  cd kafka
+   67  touch docker-compose.yml
+   68  ls
+   69  vim docker-compose.yml
+   70  ls
+   71  vim docker-compose.yml
+   72  docker-compose up -d
+   73  vim docker-compose.yml
+   74  docker-compose up -d
+   75  vim docker-compose.yml
+   76  ls
+   77  cd midsw205/
+   78  ls
+   79  cd kafka
+   80  ls
+   81  cd ..
+   82  mkdir activity06-jmercado14
+   83  exit
+   84  ls
+   85  cd activity06
+   86  cd activity06-jmercado14/
+   87  ls
+   88  cd ..
+   89  ls
+   90  git clone https://github.com/jmercado14/w205-activity06-temp
+   91  ls
+   92  cd w205-activity06-temp/
+   93  ls
+   94  pwd
+   95  cd ..
+   96  ls
+   97  cd w205
+   98  ls
+   99  cd ..
+  100  cd w205-activity06-temp/
+  101  ls
+  102  curl -L -o assessment-attempts-20180128-nested.json https://goo.gl/f5bRm4
+  103  docker-compose up -d
+  104  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json"
+  105  docker-compose exec mids bash -c "cat assessment-attempts-20180128-nested.json"
+  106  ls
+  107  cd ..
+  108  ls
+  109  cd w205
+  110  ls
+  111  curl -L -o assessment-attempts-20180128-nested.json https://goo.gl/f5bRm4
+  112  cd ..
+  113  ls
+  114  cd w205-activity06-temp/
+  115  ls
+  116  curl -L -o assessment-attempts-20180128-nested.json https://goo.gl/f5bRm4
+  117  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json"
+  118  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  119  docker-compose down
+  120  docker-compose up -d
+  121  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  122  docker-compose ps
+  123  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json | jq '.[]' -c"
+  124  ls
+  125  git pull origin master
+  126  docker-compose ps
+  127  docker-compose down
+  128  docker-compose up -d
+  129  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  130  docker-compose exec mids bash -c "cat /assessment-attempts-20180128-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  131  docker-compose exec mids bash -c "cat assessment-attempts-20180128-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  132  pwd
+  133  git pull origin master
+  134  docker-compose down
+  135  docker-compose up -d
+  136  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  137  pwd
+  138  docker-compose exec mids bash 
+  139  git pull origin master
+  140  docker-compose down
+  141  docker-compose up -d
+  142  docker-compose exec mids bash 
+  143  s
+  144  ls
+  145  pwd
+  146  docker-compose down
+  147  ls
+  148  docker-compose up -d
+  149  docker-compose down
+  150  git pull origin master
+  151  docker-compose up -d
+  152  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  153  exit
+  154  ls
+  155  cd w205-activity06-temp/
+  156  ls
+  157  docker-compose up -d
+  158  docker-compose ps
+  159  apt-get install kafkacat
+  160  cd ..
+  161  ls
+  162  apt-get install kafkacat
+  163  sudo apt-get install kafkacat
+  164  ls
+  165  cd w205-activity06-temp/
+  166  ls
+  167  kafkacat -b
+  168  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  169  docker-compos exec mids bash
+  170  docker-compose exec mids bash
+  171  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  172  history > jmercado14-history.txt
